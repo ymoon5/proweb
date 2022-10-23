@@ -1,0 +1,118 @@
+@media (max-width: 1350px) {
+    .app-content{
+        height: 100%;
+        align-items: center;
+    }
+    .credit-content{
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1192px) {
+    .header-content{
+        justify-content: center;
+        text-align: center;
+    }
+    .course{
+        gap: 30px;
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 976px) {
+    .best{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .best-content p{
+        justify-content: center;
+    }
+    .header-nav-list{
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: -100%;
+        background: #0000007f;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        transition: 500ms;
+    }
+    .header-nav-list__link{
+        font-size: 25px;
+        color: white;
+    }
+    .burger{
+        visibility: visible;
+        display: block;
+        width: 55px;
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        z-index: 2;
+    }
+    a:hover{
+        -webkit-tap-highlight-color: transparent
+    }
+    .burger img{
+        width: 100%;
+    }
+    .burger:hover ~ .header-nav-list{
+        top: 0;
+    }
+    }
+    
+    @media (max-width: 720px){
+        .credit-content{
+            flex-wrap: wrap;
+        }
+        .header-content > img{
+            width: 100%;
+        }
+        .course-info{
+            justify-content: center;
+        }
+        .app-btns a{
+            max-width: 270px;
+        }
+        .app-btns{
+            flex-wrap: wrap;
+        }
+        .header-content-btns{
+           flex-wrap: wrap;
+           justify-content: center;
+           padding: 20px 35px; 
+           gap: 40px;
+           backdrop-filter: none;
+        }
+    }
+    @media (max-width: 567px) {
+        .best img{
+            width: 100%;
+        }
+        .header-content-btns img{
+            width: 100%;
+        }
+    }
+    @media (max-width: 530px){
+        .course > img{
+            width: 100%;
+        } 
+        h1{
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 420px){
+        .app-content-card:first-child img{
+            width: 100%;
+        }
+        .app-content-card{
+            font-size: 18px;
+        }
+    }
